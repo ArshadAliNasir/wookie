@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Viewer</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+     <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+.image-viewer {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    display: none;
+}
+
+.image-viewer img {
+    max-width: 90%;
+    max-height: 90vh;
+}
+
+     </style>
+</head>
+<body>
+<div >
+    <img src="Img/wookieelogo.png" alt="">
+</div>
+    <div class="image-gallery">
+        <img src="Img/Rectangle 21.png" alt="Image 1">
+        <img src="Img/Rectangle 22.png" alt="Image 2">
+        <img src="Img/Rectangle 23.png" alt="Image 3">
+        <!-- Add more images as needed -->
+    </div>
+    <div class="image-viewer">
+        <img id="largeImage" src="Img/image 13.png" alt="Large Image">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        $(document).ready(function() {
+    $('.image-gallery img').click(function() {
+        var src = $(this).attr('src');
+        $('#largeImage').attr('src', src);
+        $('.image-viewer').slideDown();
+    });
+
+    $('.image-viewer').click(function() {
+        $(this).slideUp();
+    });
+});
+
+    </script>
+</body>
+</html>

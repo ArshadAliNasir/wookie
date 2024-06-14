@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.container-one{
+    max-width: 1200px;
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+}
+.Logo{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-bottom: 50px;
+}
+.Logo img {
+    width: 100%;
+    max-width: 500px;
+}
+.cont-two{
+    max-width: 1200px;
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.images-1{
+    width: 24%;
+}
+.images-1 img {
+    width: 100%;
+    max-width: 388px;
+}
+.images-2{
+    width: 33.33%;
+}
+.images-2 img {
+    width: 100%;
+    max-width: 388px;
+}
+.images-3{
+    width: 33.33%;
+}
+.images-3 img {
+    width: 100%;
+    max-width: 388px;
+}

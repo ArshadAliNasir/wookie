@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="Logo">
+<img src="Img/Rectangle 24.png" alt="">
+        </div>
+ 
+    <div class="cont-two">
+        <div class="images-1">
+            <img src="Img/Rectangle 24.png" alt="">
+                    </div>
+        <div class="images-1">
+            <img src="Img/Rectangle 21.png" alt="">
+                    </div>
+                    <div class="images-1">
+                        <img src="Img/Rectangle 22.png" alt="">
+                                </div>
+                                <div class="images-1">
+                                    <img src="Img/Rectangle 23.png" alt="">
+                                            </div>
+    </div>
+</div>
+    <script src="./scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+$(document).ready(function(){
+$(".main img").click(function(){
+var a =$(this).attr('src');
+$(".Logo img").attr('src', a);
+})
+    //   $(".list ul li :eq(0)").css("color","GREEN");
+    
+    //   $(".list ul li :lt(2)").css("background","GREEN");
+    //   $(".list ul li :gt(4)").css("color","red");
+    //   $(" .list li a ").css("text-decoration","none");
+    //   $(".para").dblclick(function(){
+    //     $(".para").css("background","GREEN");
+    //   });
+    //   $(".para").click(function(){
+    //     $(".para").css("background","brown");
+    //   });
+    //   $(".para").mouseenter(function(){
+    //     $(".para").css("background","yellow");
+    //   });
+    //   $(".para").contextmenu(function(){
+    //     $(".para").css("background","pink");
+    //   });
+    //   $(".para").mouseleave(function(){
+    //     $(".para").css("background","purple");
+    //   });
+     });
+    </script>
+</body>
+</html>
